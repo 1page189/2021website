@@ -1,5 +1,5 @@
 # 2021website
 
 my website markup
-1. himedia http://
-2. college http://
+1. himedia https://1page189.github.io/2021website/01himedia/
+2. college https://1page189.github.io/2021website/02college/
