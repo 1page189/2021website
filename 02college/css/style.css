@@ -163,6 +163,31 @@ ul.visual .slider1 li .sliderTxt a{
 }
 
 
+.container ul.visual li.con2 {position: relative;}
 
+li.con2 .con2Txt {
+	position: absolute;position: absolute;
+	top:80px; left:40px;
+	color: #fff;}
+
+.container ul.visual li.con2 h3 {
+	font-size:35px;
+	font-weight: 200;
+	line-height: 40px;	
+	padding-bottom: 35px;
+}
+.container ul.visual li.con2 p {
+	font-size:16px;
+	line-height: 20px;
+	padding-bottom: 35px;
+}
+.container ul.visual li.con2 a {
+	border: 1px solid #fff;
+	background-color: rgba(0,0,0,0.7);
+	display:block;
+	width: 170px;height: 40px;line-height: 40px;
+	text-align: center;	
+	color: #fff;
+}
 
 
