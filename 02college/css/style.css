@@ -45,5 +45,5 @@
 } 
 
 .tapBtn {position: absolute; top: 25px; right: 0;}
-.tapBtn a:last-child {left:-10px;}
+.tapBtn a:first-child {right:45px;}
 
