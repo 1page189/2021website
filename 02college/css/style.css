@@ -135,7 +135,7 @@
 
 #contents .container {width: 1200px;	margin: 0 auto;	}
 #contents .container>ul>li {float: 	left; width: 25%; height: 225px;}
-#contents .container>ul>li:nth-child(2n){background: pink;}
+#contents .container>ul>li:nth-child(2n){}
 #contents .container>ul>li:nth-child(1){
 	width: 900px;	height: 450px; 
 	position: relative;
@@ -191,3 +191,48 @@ li.con2 .con2Txt {
 }
 
 
+.container ul.visual li.con3 {
+	background: #00163B;
+}
+li.con3 h3 {padding-top: 20px; padding-left:20px; color: #fff;
+font-weight: 600; font-size:20px; padding-bottom: 30px;}
+li.con3 ul.hm {padding-left: 35px;}
+li.con3 ul.hm li {float:left; padding-right:20px;}
+li.con3 ul.hm li:last-child {padding-right:0;}
+li.con3 ul.hm li a { color:#fff; text-align: center; font-size:13px; }
+li.con3 ul.hm li a img {padding-bottom: 5px;}
+
+.container ul.visual li.con4 {background-image: url(../images/con4.jpg); padding-left:20px; color: #fff;}
+li.con4 h3 {padding-top: 20px; font-weight: 600; font-size:20px;}
+li.con4 h3:after {content: ""; display: block; width: 260px; height: 2px; background:#fff; margin:18px 0;}
+li.con4 ul.notice {width: 100%; height: 100%;}
+li.con4 ul.notice li {margin-left: 20px;padding-bottom: 8px; list-style:square;}
+li.con4 ul.notice li a {display:block; width: 100%;height: 100%; color: #fff; font-size:13px; position: relative;}
+li.con4 ul.notice li a .day {position: absolute; right:0;  margin-right:20px;}
+
+.container ul.visual li.con5 {background: #fff; position: relative;}
+li.con5 h3 {padding-top: 20px;color: #000; padding-left: 20px;
+font-weight: 600; font-size:20px; padding-bottom: 20px;}
+li.con5 img {margin-right: 10px; padding-left: 20px;}
+li.con5  p{position: absolute; top:65px; right: 16px; font-size:15px;}
+li.con5 .sns {position: absolute; right: 10px;bottom: 20px;}
+li.con5 .sns a {width: 30px;height: 30px;}
+
+.container ul.visual li.con6 {
+	background-image: url(../images/con6.jpg); position:relative;
+}
+li.con6 .con6Txt {
+	width: 300px; height: 50px; line-height: 50px;
+	color:#fff; text-align: center;
+	position: absolute; bottom: 0px;
+	background-color: rgba(0,0,0,0.8);
+	cursor: pointer; font-size:20px;
+	transition: 0.3s;
+}
+li.con6 .con6Txt:hover {
+	width: 300px; height: 225px; line-height: 225px;
+}
+li.con6 .con6Txt a {display:block; }
+
+li.con7 {position: relative;}
+li.con7 .c7B {position: absolute; top: 40%; left: 125px;}
