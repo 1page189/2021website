@@ -12,11 +12,26 @@
 	<script src="js/jquery.bxslider.js"></script>
 	<script>
 		$(document).ready(function(){
-			$(".slider1").bxSlider({pager:false,});
+			
+			var mySlider = $("ul.slider1").bxSlider({
+				auto:true, pager:false, controls:false
+			});
+			
 
+			$(".nextBtn")click(function(){
+				mySlider.goToNextSlide();
+			});
+			$(".prevBtn").click(function(){
+				mySlider.goToPrevSlide();
+			});
+
+			$(".slider2").bxSlider({controls:false, pagerCustom:".s2pager"});
 		});
 
 	</script>
+	<style>
+	
+	</style>
 </head>
 <body>
 	<header id="header">
@@ -71,7 +86,7 @@
 		</section>
 		<div class="container"><!-- 1200 mato-->
 			<ul class="visual clearfix">
-				<li>
+				<li class="con1">
 					<ul class="slider1">
 						<li>
 							<img src="images/img1.jpg" alt="">
@@ -88,9 +103,10 @@
 							</div>
 						</li>
 					</ul>
+					<div class="prevBtn"><img src="images/prev.png" alt=""></div>
+					<div class="nextBtn"><img src="images/next.png" alt=""></div>
 				</li><!--75-->
 				<li class="con2">
-					<img src="images/img2.jpg" alt="con2">
 					<div class="con2Txt">
 						<h3><strong>APP</strong>으로<br><strong>스마트 도서관</strong><br>바로이용하자!</h3>
 						<p>모바일 열람증은<br>도서관 자료실 / 도서대출 등에<br>사용 할 수 있습니다.</p>
@@ -108,16 +124,18 @@
 				<li class="con4">
 					<h3>공지사항</h3>
 					<ul class="notice">
-						<li><a href="#">[공지] 한국대학교 웹진...<span class="day">2020-12-16</span></a></li>
-						<li><a href="#">[공지] 우수대학교 선정 수상<span class="day">2020-12-14</span></a></li>
-						<li><a href="#">[공지] 대학입시 설명회<span class="day">2020-12-15</span></a></li>
-						<li><a href="#">[공지] 2020년 1학기 성적...<span class="day">2020-12-13</span></a></li>
+						<li><a href="#"><p></p>[공지] 한국대학교 웹진...<span class="day">2020-12-16</span></a></li>
+						<li><a href="#"><p></p>[공지] 우수대학교 선정 수상<span class="day">2020-12-14</span></a></li>
+						<li><a href="#"><p></p>[공지] 대학입시 설명회<span class="day">2020-12-15</span></a></li>
+						<li><a href="#"><p></p>[공지] 2020년 1학기 성적...<span class="day">2020-12-13</span></a></li>
 					</ul>
 				</li><!--25-->
 				<li class="con5">
 					<h3>SNS NEWS</h3>
+					<div class="snw clearfix">
 					<img src="images/img3.jpg" alt="con5img">
 					<p>한국 대학교는<br>2017학년도 신입생<br>입학식을 3월 2일(목)<br>본교 종합체육관 ...</p>
+					</div>
 					<div class="sns clearfix">
 						<a href="#"><img src="images/face.jpg" alt="facebook"></a>
 						<a href="#"><img src="images/twitter.jpg" alt="twitter"></a>
@@ -132,12 +150,71 @@
 					<img src="images/con7_1.jpg" alt="">
 					<a href="#"><img class="c7B" src="images/con7B.png" alt=""></a>
 				</li><!--25-->
-				<li class="con8"></li><!--75-->
+				<li class="con8">
+					<ul class="slider2">
+						<li>
+							<img src="images/con8.jpg" alt="slider2">
+							<div class="slider2T">
+								<p>2017년신.편입생2차모집1</p>
+								<p>2017.7.1~7.10</p>
+								<a href="#">입학사전예약 ▶</a>
+							</div>
+						</li>
+						<li>
+							<img src="images/con8.jpg" alt="slider2">
+							<div class="slider2T">
+								<p>2017년신.편입생2차모집1</p>
+								<p>2017.7.1~7.10</p>
+								<a href="#">입학사전예약 ▶</a>
+							</div>
+						</li>
+						<li>
+							<img src="images/con8.jpg" alt="slider2">
+							<div class="slider2T">
+								<p>2017년신.편입생2차모집3</p>
+								<p>2017.7.1~7.10</p>
+								<a href="#">입학사전예약 ▶</a>
+							</div>
+						</li>
+						<li>
+							<img src="images/con8.jpg" alt="slider2">
+							<div class="slider2T">
+								<p>2017년신.편입생2차모집4</p>
+								<p>2017.7.1~7.10</p>
+								<a href="#">입학사전예약 ▶</a>
+							</div>
+						</li>
+					</ul>
+					<div class="s2pager clearfix">
+						<a href="#" data-slide-index="0"></a>
+						<a href="#" data-slide-index="1"></a>
+						<a href="#" data-slide-index="2"></a>
+						<a href="#" data-slide-index="3"></a>
+					</div>
+				</li><!--75-->
 			</ul>
 		</div>
 	</div>
-	<footer>
-		
+	<footer class="clearfix">
+		<div class="fWrap">
+		<h2 class="flogo"><a href="#"><img src="images/logo.jpg" alt=""></a></h2>
+		<div class="fleft">
+			<ul class="fmenu clearfix">
+				<li><a href="#">회사소개</a></li>
+				<li><a href="">한국 대학교</a></li>
+				<li><a href="">개인정보취급방침</a></li>
+				<li><a href="">이용정책</a></li>
+				<li><a href="">입점/제휴문의 및 광고</a></li>
+				<li><a href="">이메일 무단수집거부</a></li>
+			</ul>
+			<p>
+			대표자 : 홍길동 &nbsp; 서울특별시 구로구 구로로 300(구로동 6가) &nbsp; 사업자등록번호 : 123-56-7890234<br>
+			통신판매업 신고번호 : 제 1234-서울 구로구-1004호 &nbsp; 개인정보관리 책임자 : 홍길동 &nbsp; 소비자피해보상보험<br>
+			고객센터 : 1234-5678 &nbsp;  FAX : 02-1234-5678 &nbsp; HANGUKUNIVERSITY @HANGUK.COM
+			</p>
+			<p>COPYRIGHT (C) HANGUK. ALL RIGHTS RESERVED.</p>
+		</div>
+		</div>
 	</footer>
 </body>
 </html>
