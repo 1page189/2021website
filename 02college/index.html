@@ -12,19 +12,9 @@
 	<script src="js/jquery.bxslider.js"></script>
 	<script>
 		$(document).ready(function(){
-			
-			var mySlider = $("ul.slider1").bxSlider({
-				auto:true, pager:false, controls:false
-			});
-			
-
-			$(".nextBtn")click(function(){
-				mySlider.goToNextSlide();
-			});
-			$(".prevBtn").click(function(){
-				mySlider.goToPrevSlide();
-			});
-
+			var mySlider = $(".slider1").bxSlider({pager:false, controls:false,});
+			$(".prevBtn").click(function(){mySlider.goToPrevSlide()});
+			$(".nextBtn").click(function(){mySlider.goToNextSlide()});
 			$(".slider2").bxSlider({controls:false, pagerCustom:".s2pager"});
 		});
 
