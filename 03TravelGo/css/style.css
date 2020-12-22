@@ -1,12 +1,10 @@
 @charset "UTF-8";
 
-#header {height: 350px; background: url(../images/header.jpg) no-repeat center;}
-#header .hT .hTWrap {width: 980px; margin: 0 auto;}
-#header .hT .hTWrap h2{}
-#header .hT .hTWrap form {}
-#header .hT .hTWrap form fieldset{}
-#header .hT .hTWrap form fieldset legend {}
-#header .hT .hTWrap form fieldset .schF{}
-#header .hT .hTWrap form fieldset .schF label {}
-#header .hT .hTWrap form fieldset .schF input {}
-#header .hT .hTWrap form fieldset .schF span {}
+#header {
+	background:#0b0801 url(../images/img1.jpg) no-repeat center;
+	height: 154px;
+	position:relative;
+	background-position: -100px 0;
+}	
+#header .hT {}
+#header .hT .hTWrap {width:980px; margin: 0 auto;}
