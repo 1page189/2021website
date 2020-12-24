@@ -12,7 +12,7 @@
 		<div class="hT"><!-- headerimg w100%-->
 			<div class="hTWrap">
 				<h2><a href="#"><img src="images/logo2.png" alt="logo"></a></h2>
-				<form action="#" method="get">
+				<!-- <form action="#" method="get">
 					<fieldset>
 						<legend>search</legend>
 						<div class="schF">
@@ -21,8 +21,15 @@
 							<span class="icon_sc">icon_sc</span>
 						</div>
 					</fieldset>
-				</form> <!-- inline요소임 -->
-				<ul>
+				</form> inline요소임 -->
+				<div class="sWrap">
+					<form action="#" method="post">
+						<label for="search" class="searchTit">search</label>
+						<input type="text" id="search" placeholder="검색어를 입력해주세요" class="searchInp">
+						<input type="submit"value="button" class="s_b">
+					</form>
+				</div>
+				<ul class="clearfix">
 					<li>+82 02 1234 5678</li>
 					<li>
 						<a href="#"><img src="images/face.jpg"></a>
@@ -35,11 +42,11 @@
 		</div>
 		<div class="hB"> <!--w100%-->
 			<nav> <!--w980 m0auto-->
-				<ul class="gnb">
-					<li><a href="#">여행도시</a></li>
-					<li><a href="#">호텔예약</a></li>
-					<li><a href="#">렌트카</a></li>
-					<li><a href="#">여행TIP</a></li>
+				<ul class="gnb clearfix">
+					<li><a href="#">테마보기</a></li>
+					<li><a href="#">예약 스케줄</a></li>
+					<li><a href="#">예약하기</a></li>
+					<li><a href="#">방탈출TIP</a></li>
 					<li><a href="#">회사소개</a></li>
 					<li><a href="#">커뮤니티</a></li>
 				</ul>
@@ -47,7 +54,40 @@
 		</div>
 	</header>
 	<div id="content">
-		
+		<div class="container"><!--980-->
+			<section class="cTop clearfix"><!--480-->
+				<div class="cTL">
+					<div class="formT"></div>
+					<ul class="conBox clearfix">
+						<li>
+							<div class="conT1">
+								<a href="#">
+								스크림가면<span>강남점</span><span>▶</span><div>
+								</a>
+							</div>
+						</li> <!--230-->
+						<li class="cB2"></li> <!--230-->
+					</ul>
+				</div>
+				<div class="cTR">
+					<h2>ESCAPE M</h2>
+					<p>지금, 방탈출이 땡긴다면?<br> ESCAPE M에서 찾아봐!</p>
+				</div><!--480-->
+			</section>
+			<section class="cBottom">
+				<ul class="clearfix">
+					<li class="cB3"></li>
+					<li class="cB4"></li>
+					<li class="cB5"></li>
+					<li class="cB6"></li>
+					<li class="cB7"></li>
+					<li class="cB8"></li>
+					<li class="cB9"></li>
+					<li class="cB10"></li>
+				</ul>
+			</section>
+			
+		</div>
 	</div>
 	<footer id="footer">
 		
