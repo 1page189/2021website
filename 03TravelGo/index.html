@@ -5,7 +5,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>여행사</title>
 	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<script>
+		$(document).ready(function(){
+			var slideI = $(".slider").bxslider({pager:false, controls:false});
+			$(".prevBtn").click(function(){slideI.goToPrevSlide()});
+			$(".nextBtn").click(function(){slideI.goToNextSlide()});			
+		});
+	</script>
 </head>
 <body>
 	<header id="header">
@@ -58,15 +68,25 @@
 			<section class="cTop clearfix"><!--480-->
 				<div class="cTL">
 					<div class="formT"></div>
-					<ul class="conBox clearfix">
-						<li>
-							<div class="conT1">
-								<a href="#">
-								스크림가면<span>강남점</span><span>▶</span><div>
-								</a>
+					<ul class="clearfix">
+						<li><a href="#">
+							<img src="images/con1.png" alt="">
+							<div class="conT">
+								<p class="ml30">
+								스크림&nbsp;가면<span class="ml20 fs14">강남점  ▶</span>
+								</p>
 							</div>
+							</a>
 						</li> <!--230-->
-						<li class="cB2"></li> <!--230-->
+						<li><a href="#">
+							<img src="images/con2.png" alt="">
+							<div class="conT">
+								<p class="ml20">
+								유령저택&nbsp;탈출<span class="ml10 fs14">강남점  ▶</span>
+								</p>
+							</div>
+							</a>
+						</li> <!--230-->
 					</ul>
 				</div>
 				<div class="cTR">
@@ -76,8 +96,42 @@
 			</section>
 			<section class="cBottom">
 				<ul class="clearfix">
-					<li class="cB3"></li>
-					<li class="cB4"></li>
+					<li class="cB3">
+						<ul class="slider">
+							<li>
+								<img src="images/con3.jpg" alt="">
+								<div class="sliderT">
+									<p>ESCAPE M 구로점1</p>
+									<p>★★★★<span class=white>★<span></p>
+								</div>
+							</li>
+							<li>
+								<img src="images/con3.jpg" alt="">
+								<div class="sliderT">
+									<p>ESCAPE M 구로점2</p>
+									<p>★★★★<span class=white>★<span></p>
+								</div>
+							</li>
+							<li>
+								<img src="images/con3.jpg" alt="">
+								<div class="sliderT">
+									<p>ESCAPE M 구로점3</p>
+									<p>★★★★<span class=white>★<span></p>
+								</div>
+							</li>
+						</ul>
+						<div class="prevBtn">
+							<img src="images/prev.png" alt="">
+						</div>						
+						<div class="nextBtn">
+							<img src="images/next.png" alt="">
+						</div>						
+					</li>
+					<li class="cB4">
+						<ul class="slider">
+							
+						</ul>
+					</li>
 					<li class="cB5"></li>
 					<li class="cB6"></li>
 					<li class="cB7"></li>
