@@ -93,7 +93,7 @@ body {height:100%;
 	position: absolute;
 	left:0; bottom:0; background: #3c3c3c;
 	width: 100%; height:50px; line-height: 50px;
-	color:#fff;font-weight: 200; font-size:20px;
+	color:#fff;font-weight: 600; font-size:18px;
 }
 .ml10 {margin-left: 10px;}
 .ml30 {margin-left: 30px;}
@@ -121,7 +121,7 @@ body {height:100%;
 
 .container .cBottom {width: 980px; margin: 0 auto;;}
 .cBottom ul {}
-.cBottom ul li {
+.cBottom > ul > li {
 	float:left; width: 230px; height: 245px; background: #f00;
 	margin-right: 20px; margin-bottom: 20px;
 }
@@ -139,15 +139,27 @@ body {height:100%;
 
 
 
-.slider li {position: absolute; width: 230px; height: 245px; overflow: hidden;}
-.slider li img {width: 200%; display:block; transform: translate(0,-40px);}
-.slider li .sliderT {position: absolute; background:#4c2d6f; left:0; bottom:0; width: 100%; height:70px; padding-left:20px;}
-.slider li .sliderT p {color:white;font-weight: bold; font-size:20px; margin-top: 15px; line-height: 20px;}
-.slider li .sliderT p:last-child {display:block; margin: 0;text-align: left; font-size:18px; margin: 0; color: orange;}
+.bx-wrapper {
+		-moz-box-shadow:none;
+		-webkit-box-shadow:none;
+		box-shadow: none;
+		border: 0 none;
+		margin-bottom: 0;
+		}
+.cB3,.cB4 {position: relative;}
+.slider1 li,.slider2 li {position: absolute; width: 230px; height: 245px; overflow: hidden; cursor: pointer;}
+.slider1 li img,.slider2 li img {display:block; transform: scale(3); width: 100%;}
+/*.slider1 li img:last-child {transform:scale(2.5);}*/
+.slider1 li .sliderT,.slider2 li .sliderT {position: absolute; width: 100%;background:rgba(100,65,165,0.9); left:0; bottom:0; width: 100%; height:70px; padding-left:20px;}
+.slider1 li .sliderT p{color:white;font-weight: bold; font-size:18px; margin-top: 15px; line-height: 20px;}
+.slider1 li .sliderT p:last-child{display:block; margin: 0;text-align: left; font-size:18px; margin: 0; color: orange;}
+.slider1 li .sliderT:hover,.slider2 li .sliderT:hover {background: rgba(56,19,56,1);}
 
-.cB3 {position: relative;}
-.nextBtn,.prevBtn{position: absolute; top:50%; margin-top: -25%; cursor: pointer; transform: scale(0.6);}
-.prevBtn {left:-11px;}
-.nextBtn {right: -11px;}
+.slider2 li .sliderT p {margin-left: -20px;color:white;font-weight: 500; font-size:20px; line-height: 70px; text-align: center;}
+
+.nextBtn,.nextBtn2,.prevBtn,.prevBtn2{position: absolute; top:50%; margin-top: -25%; cursor: pointer; transform: scale(0.6);}
+.prevBtn,.prevBtn2 {left:-11px;}
+.nextBtn,.nextBtn2 {right: -11px;}
 
 .white {color:white !important;}
+.bold {font-weight: bold !important;}
