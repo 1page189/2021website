@@ -10,12 +10,19 @@
 	<link rel="stylesheet" href="css/style.css">
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
+	<script src="js/jquery.colorbox-min.js"></script>
 	<script>
 		$(document).ready(function(){
 			var mySlider = $(".slider1").bxSlider({pager:false, controls:false,});
 			$(".prevBtn").click(function(){mySlider.goToPrevSlide()});
 			$(".nextBtn").click(function(){mySlider.goToNextSlide()});
 			$(".slider2").bxSlider({controls:false, pagerCustom:".s2pager"});
+
+			$(".youtube").colorbox({
+				iframe:true,
+				innerWidth:720,
+				innerHeight:480
+			});
 		});
 
 	</script>
@@ -138,7 +145,7 @@
 				</li><!--25-->
 				<li class="con7">
 					<img src="images/con7_1.jpg" alt="">
-					<a href="#"><img class="c7B" src="images/con7B.png" alt=""></a>
+					<a href="https://www.youtube.com/embed/D5PAAkwT9uo" class="youtube"><img class="c7B" src="images/con7B.png" alt=""></a>
 				</li><!--25-->
 				<li class="con8">
 					<ul class="slider2">
