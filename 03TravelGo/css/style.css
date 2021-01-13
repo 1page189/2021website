@@ -90,26 +90,37 @@ body {height:100%;
 	
 }
 
-.inp {width:300px; height:100px; display: block;}
+.inp {width:300px; height:100px; display: none;}
 .formT>input {display: none;}
 .inp:nth-child(1):checked ~ div.sliderTab>label:nth-child(1) {background: #ddd; color:#222 !important;}
 .inp:nth-child(2):checked ~ div.sliderTab>label:nth-child(2) {background: #ddd;  color:#222 !important;}
 .inp:nth-child(3):checked ~ div.sliderTab>label:nth-child(3) {background: #ddd;  color:#222 !important;}
 
 
+.inp:nth-child(1):checked ~ div.tab_slider1 {display:block;}
+.inp:nth-child(1) ~ div.tab_slider1{display:none;}
+
+.inp:nth-child(2):checked ~ div.tab_slider2 {display:block;}
+.inp:nth-child(2) ~ div.tab_slidr2{display:none;}
+
+.inp:nth-child(2):checked ~ div.tab_slider3 {display:block;}
+.inp:nth-child(2) ~ div.tab_slidr3{display:none;}
+
+
 
 
 .sliderTab label {
 	display: block; width: 30%;height:33.3333%; 
-	color: #fff; font-weight: bold; text-align: left; text-indent: 20px;
+	color: #fff; font-weight: 400; text-align: left; text-indent: 20px;
+	font-size:20px;
 }
-.sliderTab label:nth-child(1):before {
+/*.sliderTab label:nth-child(1):before {
 	content: ""; background-image: url(../images/key.png);
 	display: inline-block; width: 30px;height: 30px;
 	background-size: cover;
 	background-color: white;
 }
-
+*/
 
 
 .sliderTab label:nth-child(1) {background: #6F34ED;}
