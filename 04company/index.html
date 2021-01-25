@@ -11,12 +11,17 @@
 	<script src="js/jquery.bxslider.js"></script>
 	<script>
 		$(document).ready(function(){
-			$(".slider").bxSlider();
+			$(".slider").bxSlider({
+				auto:true,
+				controls:false,
+				pager:false
+			});
 			// $(dom) , 매소드()
 			$(".slider1st").bxSlider({
+				auto:true,
 				controls:false,
-				pager:false,
-				auto:ture
+				pager:false
+
 			});
 
 			$(".toggleMenu").click(function(){
@@ -53,7 +58,8 @@
 					<li><a href="#">CSV</a></li>
 					<li><a href="#">CJ 소개</a></li>
 					<li><a href="#">인재채용</a></li>
-					<li><a href="#">ㆍKR <img src="images/gnb_icon.png" alt="check"></a></li>
+					<li><a href="#">ㆍKR</a></li>
+					<li><a href="#"><img src="images/gnb_icon.png" alt="check"></a></li>
 				</ul>
 			</nav>
 			<div class="toggleMenu">
@@ -67,14 +73,14 @@
 				<li class="slider_1st"><!--bxslider por-->
 					<!-- <img src="images/mainimg01.jpg" alt=""> -->
 					<div class="slider_txt">
-						<h3>Lorem ipsum dolor sit.</h3>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, voluptatum.</p>
+						<h3>문화로 세상을 바꾸다</h3>
+						<p>CJ의 새로운 라이프스타일을 통해<br />당신의 평범한 일상이 특별한 가치로 채워집니다.</p>
 						</div>
 				</li>
 				<li class="slider_2st">
 					<div class="slider_txt">
-						<h3>Lorem ipsum dolor sit.</h3>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, voluptatum.</p>
+						<h3>문화로 세상을 바꾸다</h3>
+						<p>CJ의 새로운 라이프스타일을 통해<br />당신의 평범한 일상이 특별한 가치로 채워집니다.</p>
 						</div>
 				</li>
 				<!-- <li>
@@ -104,14 +110,18 @@
 		<ul class="clearfix">
 			<li class="ct1st">
 				<a href="#">
-					<img src="images/icon01_01.png" alt="뉴스레텅신청하기">
-					<p>뉴스레터신청</p>
+					<img src="images/icon01_01.png" alt="">
+					<h3>#LIVE NEW<br />CJ</h3>
+					<p>당신의 평범한 일상을<br>새롭게</p>
+					<p>더보기</p>
 				</a>
 			</li>
 			<li class="ct2st">
 				<a href="#">
-					<img src="images/img01_01.jpg" alt="영상" class="bgImg">
-					<img src="images/icon01_06.png" alt="실행" class="play">
+					<!-- <img src="images/img01_01.jpg" alt="영상" class="bgImg">
+					<img src="images/icon01_06.png" alt="실행" class="play"> -->
+					<h4>집콕시대의 라이프 스타일</h4>
+					<p>집콕<span>콕</span>선생</p>
 				</a>
 
 			</li>
@@ -120,25 +130,25 @@
 				<div class="sliderWrap">
 					<ul class="slider1st">
 						<li class="news clearfix">
-							<div class="left">Lorem ipsum dolor sit amet, consectetur adipisicing, elit. Qui, dolor.</div>
+							<div class="left">비비고 만두,<br />매출 1조 돌파<br>전세계에 K-만두 각인</div>
 							<div class="right">
-								<img src="images/img01_02.jpg" alt="img">
+								<img src="images/con3_1.png" alt="img">
 							</div>
 						</li>
 						<li class="news clearfix">
 							<div class="left">Lorem ipsum dolor sit amet, consectetur adipisicing, elit. Qui, dolor.</div>
 							<div class="right">
-								<img src="images/img01_02.jpg" alt="img">
+								<img src="images/con3_2.png" alt="img">
 							</div>
 						</li>
 						<li class="news clearfix">
 							<div class="left">Lorem ipsum dolor sit amet, consectetur adipisicing, elit. Qui, dolor.</div>
 							<div class="right">
-								<img src="images/img01_02.jpg" alt="img">
+								<img src="images/con3_3.png" alt="img">
 							</div>
 						</li>
 					</ul>
-					<h2>뉴스</h2>
+					<h2>NEWS</h2>
 					<div class="btn clearfix">
 						<img src="images/btn01_01.jpg" alt="btn1" class="prevBtn">
 						<img src="images/btn01_02.jpg" alt="btn2" class="nextBtn">
@@ -151,14 +161,16 @@
 					<p>뉴스레터신청</p>
 				</a>
 			</li>
+
 			<li class="ct5st">
-				<a href="#">
-					<img src="images/icon01_03.png" alt="뉴스레텅신청하기">
-					<p>뉴스레터신청</p>
-				</a>
+				<img src="images/img01_03.jpg" alt="빛과 에너지">
+				<div class="txt">
+					<h3>전력 및 에너지 플랜트</h3>
+					<p>세상을 밝히는<br>빛과 에너지</p>
+				</div>
 			</li>
 			<li class="ct6st">
-				<img src="images/img01_03.jpg" alt="빛과 에너지">
+				<img src="images/img01_06.jpg" alt="빛과 에너지">
 				<div class="txt">
 					<h3>전력 및 에너지 플랜트</h3>
 					<p>세상을 밝히는<br>빛과 에너지</p>
@@ -172,11 +184,10 @@
 				</div>
 			</li>
 			<li class="ct8st">
-				<img src="images/img01_04.jpg" alt="빛과 에너지">
-				<div class="txt">
-					<h3>전력 및 에너지 플랜트</h3>
-					<p>세상을 밝히는<br>빛과 에너지</p>
-				</div>
+				<a href="#">
+					<img src="images/icon01_04.png" alt="뉴스레텅신청하기">
+					<p>뉴스레터신청</p>
+				</a>
 			</li>
 			<li class="ct9st">
 				<a href="#">
@@ -185,12 +196,6 @@
 				</a>
 			</li>
 			<li class="ct10st">
-				<a href="#">
-					<img src="images/icon01_05.png" alt="뉴스레텅신청하기">
-					<p>뉴스레터신청</p>
-				</a>
-			</li>
-			<li class="ct11st">
 				<img src="images/img01_05.jpg" alt="빛과 에너지">
 				<div class="txt">
 					<h3>전력 및 에너지 플랜트</h3>
@@ -244,5 +249,94 @@
 			</ul>
 		</div>
 	</div>
+
+
+	<div class="bconWrap">
+		<div class="bcontent_top">
+			<ul class="clearfix">
+				<li class="ct1st">
+					<a href="#">
+						<img src="images/icon01_01.png" alt="">
+						<h3>CJ<br />Now</h3>
+						<p>CJ의 최신 소식을<br>지금 만나보세요</p>
+						<p>더보기</p>
+					</a>
+				</li>
+				<li class="ct2st">
+					<div>
+						<img src="" alt="">
+						<div class="bct2T">
+							<h4>
+								피플
+							</h4>
+							<p>국내외 유튜브<br />크리에이터가<br />한자리에? CJ ENM...</p>
+						</div>
+					</div>
+				</li>
+				<li class="ct3st">
+					<div class="bct3T">
+						<h4>
+							사회공헌활동
+						</h4>
+						<p>CJ대한통운<br />한국유엔봉사단<br />'2020대한민국 봉사대상'<br>수상</p>
+					</div>
+					<img src="" alt="">
+				</li>
+				<li class="ct4st">
+					<img src="images/img01_06.jpg" alt="빛과 에너지">
+					<div class="overlay"></div>
+					<div class="txt">
+						<h4>NEWS</h4>
+						<p>동남아 최대 온라인 쇼핑 플랫폼<br>'쇼퍼(Shopper)'진출</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="bcontent_b">
+			<ul class="clearfix">
+			<li class="ct1st">
+				<h3>윤리경영</h3>
+				<p>CJ는 윤리경을 통해<br>투명하고 함께하는 문화를 만듭니다</p>
+				<button>자세히보기</button>
+			</li>
+			<li class="ct2st">
+				<h3>인재채용</h3>
+				<p>당신이<br>문화를 만듭니다</p>
+				<button>자세히보기</button>
+			</li>
+			</ul>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="footerWrap">
+		<h2><a href="#"><img src="images/logo.png" alt="logo"></a></h2>
+		<ul class="clearfix">
+			<li><a href="#">개인정보처리방침</a></li>
+			<li><a href="#">이용약관</a></li>
+			<li><a href="#">뉴스레터</a></li>
+			<li><a href="#">공지사항</a></li>
+			<li><a href="#">온라인제보</a></li>
+			<li><a href="#">고객센터</a></li>
+			<li><a href="#">사이트맵</a></li>
+		</ul>
+		<div class="right_t">계열사바로가기+</div>
+		<!-- after line -->
+		<address>서울특별시 중구 소월로 2길 12, CJ THE CENTER     |    대표이사 : 손경식, 김홍기
+사업자등록번호 : 104-81-26714</address>
+		<p>Ⓒ 씨제이㈜. All Rights Reserved.</p>
+		<div class="sns">
+			<ul class="clearfix">
+				<li><a href="#"><img src="" alt="facebook"></a></li>
+				<li><a href="#"><img src="" alt="youtube"></a></li>
+				<li><a href="#"><img src="" alt="being"></a></li>
+				<li><a href="#"><img src="" alt="naverblog"></a></li>
+			</ul>
+		</div>
+
+
+	</div>
+	</footer>
+
 </body>
 </html>
