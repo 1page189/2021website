@@ -247,5 +247,5 @@ footer {
 .footerWrap p {font-weight:300;opacity:0.8; margin-top: 10px;font-size:0.7em;}
 
 .footerWrap .sns {height: 45px; position: absolute;left:20%; top:100px;}
-.footerWrap .sns li{float:left; margin-right: 20px;}
+.footerWrap .sns li{float:left; margin-right: 10px;}
 .footerWrap .sns li a{}
