@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/colorbox.css">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<script src="js/jquery.colorbox-min.js"></script>
+	<script src="js/wow.js"></script>
+  <style>
+
+
+
+
+    .visualSub{
+      width: 100%;height:456px;background:#ccc;position: relative;overflow: hidden;
+      background: url(images/cjcsvV.jpg);
+    }
+    /* .visualSub #sVideo{width: 100%;height: 100%;object-fit:cover;} */
+    .visualSub .txt{position: absolute;left:50%;top:55%;transform:translate(-50%,-50%);color:white; text-align: center;}
+    .visualSub .txt h2 {}
+    .visualSub .subMenuTab{width: 1260px;
+      position: absolute;left:50%;transform:translateX(-50%);color:white;bottom:0;
+    }
+    .visualSub .subMenuTab ul{background:pink;}
+    .visualSub .subMenuTab li{float: left;width: 20%;text-align: center;}
+    .visualSub .subMenuTab li a{display: block;line-height:40px;color:white;}
+
+    /*contents*/
+    .contents{width: 1126px;margin: 0 auto}
+    .contents .subContent div{
+      height: 1000px;background:gray;
+    }
+  </style>
+  <script>
+    $(function(){
+      $(".subContent div").hide().eq(0).show();
+      $(".subMenuTab li").click(function(){
+        var i = $(this).index();
+        $(".subContent div").hide().eq(i).fadeIn();
+
+        if(i == 0){
+          $(".loc_dep2,.title>h3").html("CJCSV");
+        }else if(i == 1){
+          $(".loc_dep2,.title>h3").html("CJ나눔재단");
+        }else if(i == 2){
+          $(".loc_dep2,.title>h3").html("CJ문화재단");
+        }else if(i == 3){
+          $(".loc_dep2,.title>h3").html("글로벌 사회공헌");
+        }else if(i == 3){
+          $(".loc_dep2,.title>h3").html("임직원 봉사");
+        }
+        return false; //클릭시 위로 이동방지
+
+      });
+    });
+  </script>
+
+</head>
+<body>
+  <header id="main_header subH">
+		<div id="header_top" class="clearfix"> <!--1260 width-->
+			<h1 class="logo"><a href="#"></a></h1>
+			<nav id="main_menu">
+				<ul class="clearfix">
+					<li><a href="#">#LIVE NEW CJ</a></li>
+					<li><a href="#">CJ Now</a></li>
+					<li><a href="#">Media</a></li>
+					<li><a href="#">Brand</a></li>
+					<li><a href="#">CSV</a></li>
+					<li><a href="#">CJ 소개</a></li>
+					<li><a href="#">인재채용</a></li>
+					<li><a href="#" class="active">ㆍKR</a></li>
+					<li><a href="#">ㆍEng</a></li>
+					<!-- <li><a href="#"><img src="images/gnb_icon.png" alt="check"></a></li> -->
+				</ul>
+			</nav>
+			<div class="toggleMenu">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
+		</div>
+    </header>
+  <div class="visualSub">
+    <!-- <video id="sVideo" autoplay muted loop>
+      <source src="images/video2_1.webm" type="video/webm">
+    </video> -->
+    <div class="txt">
+      <h2>CSV</h2>
+       <p>함께 나눌수록 더욱 커지는 가치<span class="blind2"><br></span>더 나은 세상을 향한 열정</p>
+        <p>CJ는 ‘사업보국’의 창업 이념을 바탕으로 우리가 잘할 수 있고 사회적 관심이 필요한 영역에서 사회 공헌을 실천해 왔습니다.<br />
+CJ나눔재단, CJ문화재단을 비롯한 각 계열사가 사업과 경영활동 전 과정에서 사회적 가치를 창출하기 위해 노력하고 있습니다.</p>
+    </div>
+    <div class="subMenuTab">
+      <ul>
+        <li><a href="#">CJCSV</a></li>
+        <li><a href="#">CJ나눔재단</a></li>
+        <li><a href="#">CJ문화재단</a></li>
+        <li><a href="#">글로벌 사회공헌</a></li>
+        <li><a href="#">임직원 봉사</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="contents">
+    <div class="loc">
+      home > CSV > <span class="loc_dep2">CJCSV</span>
+    </div>
+    <div class="title">
+      <!-- <h3>CJCSV</h3> -->
+    </div>
+    <div class="subContent">
+
+      <!-- content1ST -->
+      <div class="menu1st">
+        <div class="submTWrap">
+          <h4>CJ는 창업 이래 지속적인 도전과 혁신의 과정을 통해 다양한 산업을 창출함으로써<br />
+국가와 사회의 구성원으로서 책임을 다하고, 사업을 통해 더불어 사는 사회를 만들어 가는 데 앞장서고 있습니다.<br />
+이것이 바로 CJ가 추구하는 CSV(Creating Shared Value)의 정신이며,<br />
+앞으로도 CJ가 가장 잘 할 수 있고 사회적 관심이 필요한 영역에서 CSV를 실천해 나갈 것입니다.</h4>
+        </div>
+
+        <div class="submBWrap">
+
+        </div>
+      </div>
+      <!-- content2ST -->
+      <div class="menu2st">
+        2content
+      </div>
+      <!-- content3ST -->
+      <div class="menu3st">
+        3content
+      </div>
+      <!-- content4ST -->
+      <div class="menu4st">
+        4content
+      </div>
+      <!-- content5ST -->
+      <div class="menu5st">
+        5content
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/colorbox.css">
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
 	<script src="js/jquery.colorbox-min.js"></script>
@@ -21,6 +22,18 @@
 				pager:false
 			});
 			// $(dom) , 매소드()
+
+		//addclass
+			$("#main_menu>ul>li>a").click(function(){
+      var num = $(this).index();
+      // console.log(num);
+
+      $("#main_menu>ul>li>a").removeClass();
+      $(this).addClass("active");
+    });
+//addclass end
+
+
 			$(".slider1st").bxSlider({
 				auto:true,
 				controls:false,
@@ -46,6 +59,11 @@
 				$("#main_menu").removeAttr("style");
 			});
 
+			$(".youtube").colorbox({
+				iframe:true,
+				innerWidth:560,
+				innerHeight:315
+			});
 		});
 	</script>
 </head>
@@ -59,10 +77,10 @@
 					<li><a href="#">CJ Now</a></li>
 					<li><a href="#">Media</a></li>
 					<li><a href="#">Brand</a></li>
-					<li><a href="#">CSV</a></li>
+					<li><a href="subsample.html">CSV</a></li>
 					<li><a href="#">CJ 소개</a></li>
 					<li><a href="#">인재채용</a></li>
-					<li><a href="#">ㆍKR</a></li>
+					<li><a href="#" style="color:#ff4e00;">ㆍKR</a></li>
 					<li><a href="#">ㆍEng</a></li>
 					<!-- <li><a href="#"><img src="images/gnb_icon.png" alt="check"></a></li> -->
 				</ul>
@@ -75,14 +93,14 @@
 		</div>
 		<div class="sliderWrap">
 			<ul class="slider">
-				<li class="slider_1st"><!--bxslider por-->
+				<li class="slider_1st mainV"><!--bxslider por-->
 					<!-- <img src="images/mainimg01.jpg" alt=""> -->
 					<div class="slider_txt">
 						<h3>문화로 세상을 바꾸다</h3>
 						<p>CJ의 새로운 라이프스타일을 통해<br />당신의 평범한 일상이 특별한 가치로 채워집니다.</p>
 						</div>
 				</li>
-				<li class="slider_2st">
+				<li class="slider_2st mainV">
 					<div class="slider_txt">
 						<h3>문화로 세상을 바꾸다</h3>
 						<p>CJ의 새로운 라이프스타일을 통해<br />당신의 평범한 일상이 특별한 가치로 채워집니다.</p>
@@ -126,7 +144,7 @@
 				</a>
 			</li>
 			<li class="ct2st ct4 wow fadeInDown" data-wow-delay="0.1s">
-				<a href="#">
+				<a href="https://www.youtube.com/embed/ThvmYkGEWj8" class="youtube" title="[집콕 콕선생] CJ대한통운 빅데이터📦로 알아본 2020 K-집콕 트렌드 🏠">
 					<!-- <img src="images/img01_01.jpg" alt="영상" class="bgImg">
 					<img src="images/icon01_06.png" alt="실행" class="play"> -->
 					<h4>집콕시대의 라이프 스타일</h4>
@@ -147,13 +165,13 @@
 							</div>
 						</li>
 						<li class="news clearfix">
-							<div class="left">Lorem ipsum dolor sit amet, consectetur adipisicing, elit. Qui, dolor.</div>
+							<div class="left">CJ제일제당,<br />소비자중심경영(CCM) ‘대통령표창’ 수상</div>
 							<div class="right">
 								<img src="images/con3_2.png" alt="img">
 							</div>
 						</li>
 						<li class="news clearfix">
-							<div class="left">Lorem ipsum dolor sit amet, consectetur adipisicing, elit. Qui, dolor.</div>
+							<div class="left">친환경 포장재, <br>“必 환경시대, 착한 포장으로 <br />앞서갑니다”</div>
 							<div class="right">
 								<img src="images/con3_3.png" alt="img">
 							</div>
@@ -285,30 +303,30 @@
 			<ul class="clearfix">
 				<li>
 					<a href="#">
-						<img src="images/card1.png" alt="">
-						<h3>비비고</h3>
-						<p>한국의 맛과 우수성을<br />세계에 알리는<br />글로벌 한식 브랜드 '비비고'</p>
+						<img src="images/card1.png" alt="" class="wow fadeInDown" data-wow-delay="0.1s">
+						<h3 class="ct4 wow fadeInUp" data-wow-delay="0.3s">비비고</h3>
+						<p class="ct4 wow fadeInUp" data-wow-delay="0.4s">한국의 맛과 우수성을<br />세계에 알리는<br />글로벌 한식 브랜드 '비비고'</p>
 					</a>
 				</li>
 				<li>
 					<a href="#">
-						<img src="images/card2.png" alt="">
-						<h3>CGV</h3>
-						<p>영화, 그 이상의 감동을 전하는 <br />Global No.1 Cultureplex CGV!</p>
+						<img src="images/card2.png" alt="" class="wow fadeInDown" data-wow-delay="0.2s">
+						<h3 class="ct4 wow fadeInUp" data-wow-delay="0.4s">CGV</h3>
+						<p class="ct4 wow fadeInUp" data-wow-delay="0.5s">영화, 그 이상의 감동을 전하는 <br />Global No.1 Cultureplex CGV!</p>
 					</a>
 				</li>
 				<li>
 					<a href="#">
-						<img src="images/card3.png" alt="">
-						<h3>올리브영</h3>
-						<p>건강한 아름다움을 제안하는<br>라이프 스타일 플랫폼</p>
+						<img src="images/card3.png" alt="" class="wow fadeInDown" data-wow-delay="0.3s">
+						<h3 class="ct4 wow fadeInUp" data-wow-delay="0.5s">올리브영</h3>
+						<p class="ct4 wow fadeInUp" data-wow-delay="0.6s">건강한 아름다움을 제안하는<br>라이프 스타일 플랫폼</p>
 					</a>
 				</li>
 				<li>
 					<a href="#">
-						<img src="images/card4.png" alt="">
-						<h3>CJ 대한통운</h3>
-						<p>The Global SCM Innovator</p>
+						<img src="images/card4.png" alt="" class="wow fadeInDown" data-wow-delay="0.4s">
+						<h3 class="ct4 wow fadeInUp" data-wow-delay="0.6s">CJ 대한통운</h3>
+						<p class="ct4 wow fadeInUp" data-wow-delay="0.7s">The Global SCM Innovator</p>
 					</a>
 				</li>
 
@@ -399,14 +417,14 @@
 		<h2><a href="#"><img src="images/logo.png" alt="logo"></a></h2>
 		<div class="footerWr">
 		<ul class="clearfix fm">
-			<li><a href="#" class="blue">개인정보처리방침</a></li>
-			<li><a href="#">이용약관</a></li>
-			<li><a href="#">뉴스레터</a></li>
-			<li><a href="#">공지사항</a></li>
-			<li><a href="#">온라인제보</a></li>
-			<li><a href="#">고객센터</a></li>
-			<li><a href="#">사이트맵</a></li>
-			<li><a href="#">계열사 바로가기+</a></li>
+			<li><a href="#!" class="blue">개인정보처리방침</a></li>
+			<li><a href="#!">이용약관</a></li>
+			<li><a href="#!">뉴스레터</a></li>
+			<li><a href="#!">공지사항</a></li>
+			<li><a href="#!">온라인제보</a></li>
+			<li><a href="#!">고객센터</a></li>
+			<li><a href="#!">사이트맵</a></li>
+			<li><a href="#!">계열사 바로가기+</a></li>
 		</ul>
 		<!-- after line -->
 
