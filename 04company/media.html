@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>sub1</title>
+  <link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/colorbox.css">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<script src="js/jquery.colorbox-min.js"></script>
+	<script src="js/wow.js"></script>
+
+  <script>
+    $(function(){
+      $(".subContent> div").hide().eq(0).show();
+      $(".subMenuTab li").click(function(){
+        var i = $(this).index();
+        $(".subContent> div").hide().eq(i).fadeIn();
+
+        if(i == 0){
+          $(".loc_dep2,.title>h3").html("CJCSV");
+        }else if(i == 1){
+          $(".loc_dep2,.title>h3").html("CJ나눔재단");
+        }else if(i == 2){
+          $(".loc_dep2,.title>h3").html("CJ문화재단");
+        }else if(i == 3){
+          $(".loc_dep2,.title>h3").html("글로벌 사회공헌");
+        }else if(i == 3){
+          $(".loc_dep2,.title>h3").html("임직원 봉사");
+        }
+        return false; //클릭시 위로 이동방지
+
+      });
+
+
+     //addClass start (header, subTab)
+     $("#main_menu>ul>li>a").click(function(){
+     var num = $(this).index();
+     // console.log(num);
+
+     $("#main_menu>ul>li>a").removeClass();
+     $(this).addClass("active");
+   });
+
+
+      $(".subMenuTab>ul>li>a").click(function(){
+      var num = $(this).index();
+      // console.log(num);
+
+      $(".subMenuTab>ul>li>a").removeClass();
+      $(this).addClass("active");
+    });
+
+    });
+  </script>
+</head>
+<body>
+  <header id="main_header subH">
+    <div id="header_top" class="clearfix"> <!--1260 width-->
+      <h1 class="logo"><a href="index.html"></a></h1>
+      <nav id="main_menu">
+        <ul class="clearfix">
+          <li><a href="#">#LIVE NEW CJ</a></li>
+          <li><a href="#">CJ Now</a></li>
+          <li><a href="media.html"class="active">Media</a></li>
+          <li><a href="brand.html">Brand</a></li>
+          <li><a href="subsample.html">CSV</a></li>
+          <li><a href="#">CJ 소개</a></li>
+          <li><a href="#">인재채용</a></li>
+          <li><a href="#" style="color:#ff4e00;">ㆍKR</a></li>
+          <li><a href="#">ㆍEng</a></li>
+          <!-- <li><a href="#"><img src="images/gnb_icon.png" alt="check"></a></li> -->
+        </ul>
+      </nav>
+      <div class="toggleMenu">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </div>
+    </header>
+
+<div class="meidaSub">
+  <img src="images/MEDIA.png" alt="" style="padding-top: 120px; min-width:1260px;width: 100%;">
+</div>
+
+  <footer class="footer">
+    <div class="footerWrap">
+    <h2><a href="#"><img src="images/logo.png" alt="logo"></a></h2>
+    <div class="footerWr">
+    <ul class="clearfix fm">
+      <li><a href="#" class="blue">개인정보처리방침</a></li>
+      <li><a href="#">이용약관</a></li>
+      <li><a href="#">뉴스레터</a></li>
+      <li><a href="#">공지사항</a></li>
+      <li><a href="#">온라인제보</a></li>
+      <li><a href="#">고객센터</a></li>
+      <li><a href="#">사이트맵</a></li>
+      <li><a href="#">계열사 바로가기+</a></li>
+    </ul>
+    <!-- after line -->
+
+    <address>서울특별시 중구 소월로 2길 12, CJ THE CENTER     |    대표이사 : 손경식, 김홍기
+<br />사업자등록번호 : 104-81-26714</address>
+    <p>Ⓒ 씨제이㈜. All Rights Reserved.</p>
+    <div class="sns">
+      <ul class="clearfix">
+        <li><a href="https://ko-kr.facebook.com/enjoyCJ/"><img src="images/snsF.png" alt="facebook"></a></li>
+        <li><a href="https://www.youtube.com/channel/UCu8-tZy6e7S7K5imEZSJVZg"><img src="images/snsY.png" alt="youtube"></a></li>
+        <li><a href="#"><img src="images/snsB.png" alt="being"></a></li>
+        <li><a href="http://wwww.naver.com"><img src="images/snsN.png" alt="naverblog"></a></li>
+      </ul>
+      </div>
+    </div>
+
+
+  </div>
+  </footer>
+
+</body>
+</html>
