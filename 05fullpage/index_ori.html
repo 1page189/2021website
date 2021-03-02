@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>fullpage</title>
+  <link rel="stylesheet" href="css/fullpage.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+  <link rel="stylesheet" href="css/style.css" class="css">
+
+
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/jquery.fullpage.js"></script>
+
+  <script>
+    $(function(){
+      $("#fullpage").fullpage({
+        menu:"#topMenu", //메뉴지정
+        anchors:["m1st","m2st","m3st","m4st","m5st","m6st"],
+        navigation:true,
+        afterLoad:function(anchorslink,index){
+          console.log(anchorslink+','+index);
+
+
+          if(index == 2){
+            $("#onView2st").addClass("move");
+          }else{
+            $("#onView2st").removeClass("move")
+          }
+
+          if(index == 3){
+            $("#onView3st").addClass("move");
+          }else{
+            $("#onView3st").removeClass("move")
+          }
+          if(index == 4){
+            $("#onView3st").addClass("move");
+          }else{
+            $("#onView3st").removeClass("move")
+          }
+          if(index == 5){
+            $("#onView3st").addClass("move");
+          }else{
+            $("#onView3st").removeClass("move")
+          }
+
+        }
+      });
+    });
+  </script>
+
+</head>
+<body>
+  <nav id="navTop" class="clearfix">
+    <h1 ><a href="#m1st"><img src="images/logo.png" alt="라인게임즈"></a></h1>
+    <ul class="clearfix nanumsquare" id="topMenu">
+      <!-- <li data-menuanchor="m1st"><a href="#m1st"><img src="images/logo.png" alt=""></a></li> -->
+      <li data-menuanchor="m2st"><a href="#m2st">프로모션</a></li>
+      <li data-menuanchor="m3st"><a href="#m3st">게임소개</a></li>
+      <li data-menuanchor="m4st"><a href="#m4st">게임정보</a></li>
+      <li data-menuanchor="m5st"><a href="#m5st">구매안내</a></li>
+    </ul>
+  </nav>
+  <div id="fullpage">
+    <!-- section 1st -->
+    <div class="section page1" data-anchor="m1st">
+      <div class="main one">
+        <!-- <h3>Lorem ipsum.</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, eligendi.</p>
+        <a href="#">more</a> -->
+      </div>
+      <div class="scroll">
+        <a href="#m2st"><img src="images/btn_scroll.png" alt=""></a>
+      </div>
+    </div>
+
+    <!-- section 2st -->
+    <div class="section page2" data-anchor="m2st">
+      <div class="main2 two" id="onView2st">
+        <!-- <h3>Lorem ipsum.</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, eligendi.</p> -->
+        <!-- <a href="#">more</a> -->
+          <iframe width="1280" height="720" src="https://www.youtube.com/embed/Vu4-XZTwyUQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+          </iframe>
+      </div>
+    </div>
+
+    <!-- section 3st -->
+    <div class="section page3" data-anchor="m3st">
+      <div class="main three" id="onView3st">
+          <img src="images/bg_3_4.png" alt="">
+      </div>
+    </div>
+    <!-- section 4st -->
+    <div class="section page4" data-anchor="m4st">
+      <div class="main four" id="onView4st">
+        <h3>게임정보</h3>
+        <div id="sliderWrap">
+          <div class="leftB"><img src="images/prev.png" alt=""></div>
+          <div class="container">
+            <ul class="clearfix">
+              <li><img src="images/slider1.jpg" alt="">1</li>
+              <li><img src="images/slider2.jpg" alt="">2</li>
+              <li><img src="images/slider3.jpg" alt="">3</li>
+              <li><img src="images/slider4.jpg" alt="">4</li>
+              <li><img src="images/slider5.jpg" alt="">5</li>
+              <li><img src="images/slider6.jpg" alt="">6</li>
+            </ul>
+          </div>
+          <div class="rightB"><img src="images/next.png" alt=""></div>
+        </div>
+        <div class="bottomWrap"> <!--gray box 1f1f1f-->
+          <ul class="txt clearfix">
+            <li>
+              <p>개발사</p>
+              <p>라인게임즈</p>
+            </li>
+            <li>
+              <p>플랫폼</p>
+              <p>PlayStation®4/Nintendo Switch™</p>
+            </li>
+            <li>
+              <p>장르</p>
+              <p>커뮤니케이션 x 서바이벌 x 어드벤처</p>
+            </li>
+            <li>
+              <p>출시일</p>
+              <p>2020.07.30</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- section 5st -->
+    <div class="section page5" data-anchor="m5st">
+      <div class="slide "><h1>Simple Demo</h1></div>
+	    <div class="slide"><h1>Only text</h1></div>
+	    <div class="slide"><h1>And text</h1></div>
+	    <div class="slide"><h1>And more text</h1></div>
+    </div>
+  </div>
+</body>
+</html>
