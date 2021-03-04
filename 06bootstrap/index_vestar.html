@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>buriedSTARS</title>
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/owl/owl.carousel.min.css"><!-- 추가 : 슬라이더 효과-->
+  <link rel="stylesheet" href="css/owl/owl.theme.default.min.css"><!-- 위와 동일-->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="js/isotope.pkgd.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+
+  <style>
+    :root{
+      --primary-color1:#4458cc;
+      --primary-color2:#854fee;
+      --bg-color1:#ccc;
+      --bg-color2:#f0f0f0;
+      --text-color:#777;
+      --border-color:#20f1f1;
+      --gradient-color:linear-gradient(90deg,#4458dc 0%,#854fee 100%);
+      --shadow-color:0px 10px 30px rgba(118,85,225,0.3);
+      --box-shadow:0px 10px 20px rgba(57,56,61,0.3)
+    }
+    /* body,html {height: 100%;} */
+    .headerWrap{
+      background:url(images/bg_1_2.jpg) no-repeat center;
+      background-size:cover; width:100vw;height:100vh; position: relative;
+    }
+    .headerWrap .nav-item{border-bottom: 4px solid transparent;transition:0.3s}
+    .headerWrap .nav-item:hover{border-bottom: 4px solid var(--primary-color1);}
+    .headerWrap.fixed-top{box-shadow:0 0 20px grey;transition:0.3s;}
+
+    nav.navbar {background:rgba(0,0,0,0); transition:0.3s;}
+    nav.navbar:hover {background:rgba(0,0,0,0.5);}
+    /* .button.primary-button{
+      box-shadow: var(--box-shadow);background:var(--gradient-color);color:white;
+      width: 433px;height: 64px; line-height: 50px;
+      position: absolute; top:70%; left:6%;
+      border:none;
+      font-size:1.5em;
+    } */
+
+    /* visualWrap */
+    .visualWrap{
+      background:#000;
+      width: 100vw; height:100vh;position: relative;
+    }
+    .visualWrap video {
+      width: 100vw; height:100vh;position: absolute; top: 0;left: 50%; transform:translateX(-50%);
+    }
+
+    /* content */
+    .content {
+      background: url(images/bg_3.jpg)no-repeat center;
+      /* background: #000; */
+      background-size:cover; width:100vw;height:100vh; position: relative;
+    }
+    .content .bluebox{width:70%; height:70%;}
+    /* .content .bluebox .blue{background: #40c3ff; width:1570px; height:960px;} */
+
+
+  </style>
+
+</head>
+<body>
+<!-- header START -->
+<div class="headerWrap">
+<header id="headerWrap">
+  <div class="container pl-0 pr-0">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <a href="#" class="navbar-brand">
+        <img src="images/logo1.png" alt="" class="img-fluid">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="#!" class="nav-link">프로모션</a>
+          </li>
+          <li class="nav-item">
+            <a href="#!" class="nav-link">게임소개</a>
+          </li>
+          <li class="nav-item">
+            <a href="#!" class="nav-link">게임정보</a>
+          </li>
+          <li class="nav-item">
+            <a href="#!" class="nav-link">구매안내</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- <a href="#!" class="btn button primary-button">구매하기</a> -->
+</div>
+<!-- header end -->
+
+<!-- visual START -->
+<div class="visualWrap">
+  <div class="container">
+    <div class="video">
+      <a href="https://www.youtube.com/embed/Vu4-XZTwyUQ">
+      <video src="images/video1.mp4" autoplay loop muted></video>
+      </a>
+    </div>
+  </div>
+</div>
+<!-- visual end -->
+
+<!-- content START -->
+<div class="content">
+  <div class="container">
+    <div class="bluebox">
+      <div class="blue"></div>
+      <div class="txt">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  //main
+  var navOffset = $("header#headerWrap").height()+50;
+
+  function navBar(){
+    $(window).scroll(function(){
+      var scroll = $(window).scrollTop();
+      if(scroll>navOffset){
+        $("header#headerWrap").addClass("fixed-top"); //fixed-top은 기본 제공되는 기능
+      }else{
+        $("header#headerWrap").removeClass("fixed-top");
+      }
+    });
+  }
+navBar();
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

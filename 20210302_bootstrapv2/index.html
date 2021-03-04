@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css"> <!--스와이퍼 (슬라이더?)-->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/base.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> <!--부트스트랩을 사용하기 위해선 있어야 함-->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<title>new site</title>
+</head>
+
+<body>
+	<header id="headerWrap" class="mb-3"><!--container이후-->
+		<div class="bgcolor"></div>
+		<div class="container"> <!--nav 전부 생성 후 container로 감싸기-->
+			<nav class="navbar navbar-expand-lg navbar-dark"> <!--navbar-dark = 글씨 밝게-->
+				<a href="index.html" class="navbar-brand"><img src="images/logo.png" alt="logo" class="img-fluid" style="max-width:180px"></a> <!--img-fluid 필수(이미지가 꽉차게)-->
+				<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav"> <!--토글을 하기 위해선 데이터 토글과 데이터 타겟 필요-->
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse " id="navbarNav"><!--collapse = 무너뜨리다-->
+					<ul class="navbar-nav  ml-auto">
+						<li class="nav-item">
+							<a href="#" class="nav-link">COMPANY</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">CATALOG</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">BUISINESS</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">COMUNITY</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<div class="row">
+				<div class="col-md-8 mb-3 mb-md-0">
+					<div class="video">
+						<video src="https://d125fmws0bore1.cloudfront.net/videos/video-bg-udacity.ogv" autoplay loop muted></video>
+						<!-- 비디오 사이즈 조정은 스타일시트에서 -->
+					</div>
+				</div>
+				<div class="col-md-4"><!--20210303 START-->
+					<ul class="card-view">
+						<li class="bg-white mb-4">
+							<a href="#!" class="d-flex"> <!--row값 없이 적용했기 때문에 d-flex지정. 해당 박스 정렬을 위해-->
+								<img src="images/card1.png" alt="" style="max-width:105px">
+								<div class="p-3">
+									<h4>POKEMON 25th</h4>
+									<p>Lorem ipsum dolor.</p>
+								</div>
+							</a>
+						</li>
+						<li class="bg-white mb-4">
+							<a href="#!" class="d-flex">
+								<img src="images/card2.png" alt="" style="max-width:105px">
+								<div class="p-3">
+									<h4>Zelda</h4>
+									<p>Breath of Wild 2</p>
+								</div>
+							</a>
+						</li>
+						<li class="bg-white">
+							<a href="#!" class="d-flex">
+								<img src="images/card3.png" alt="" style="max-width:105px">
+								<div class="p-3">
+									<h4>Elder Scroll 6</h4>
+									<p>plz....</p>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- header END -->
+	<div class="container">
+		<img src="images/logos.png" alt="" class="img-fluid w-100 mb-5">
+	</div>
+
+	<div class="slider">
+		<div class="container">
+			<h4 class="text-center slider-title mb-3">OUR COMMUNITY</h4>
+			<div class="row"> <!--swiper-container, swiper-wrapper, swiper-slide 기본 셀임 외워야 함-->
+				<div class="swiper-container col-md-10 offset-md-1"> <!--offset 가운데 정렬 느낌. 12칸중 10칸 내용, 나머지 2에서 좌우 1씩. -->
+					<div class="swiper-wrapper">
+						<!-- #1 START-->
+						<div class="swiper-slide">
+							<div class="text-center">
+								<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius mollitia aspernatur modi. Rem adipisci, assumenda! Expedita dicta architecto temporibus non vel tempora. Sapiente quasi eos dolor, obcaecati dolorum hic totam.</h4>
+								<p>POKEMON 25th</p>
+							</div>
+						</div>
+						<!-- #1 END -->
+						<!-- #2 START-->
+						<div class="swiper-slide">
+							<div class="text-center">
+								<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius mollitia aspernatur modi. Rem adipisci, assumenda! Expedita dicta architecto temporibus non vel tempora. Sapiente quasi eos dolor, obcaecati dolorum hic totam.</h4>
+								<p>Zelda</p>
+							</div>
+						</div>
+						<!-- #2 END -->
+						<!-- #3 START-->
+						<div class="swiper-slide">
+							<div class="text-center">
+								<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius mollitia aspernatur modi. Rem adipisci, assumenda! Expedita dicta architecto temporibus non vel tempora. Sapiente quasi eos dolor, obcaecati dolorum hic totam.</h4>
+								<p>ELDER SCROLL</p>
+							</div>
+						</div>
+						<!-- #3 END -->
+					</div> <!--slider-wrapper end-->
+				</div><!--slider-container end-->
+				<div class="swiper-button-next d-none d-md-block"></div> <!--기본으로 있는 버튼값 클래스(스와이프)-->
+				<div class="swiper-button-prev d-none d-md-block"></div>
+			</div>
+		</div>
+	</div>
+
+	<!-- banner START -->
+	<div class="banner mt-5">
+		<div class="container">
+			<div class="row">
+				<!-- #1 -->
+			<div class="col-sm-6 col-lg-4 mb-5">
+					<div class="card">
+					<div class="card-img">
+						<div class="mask"></div>
+						<img src="images/nano1.jpg" alt="" class="img-fluid w-100">
+						<div class="view-new">NEW</div><!--개인이 지정. 정해진것x-->
+					</div>
+					<div class="card-body">
+						<h4 class="card-title">Lorem ipsum dolor.</h4>
+						<!-- <p>세상에 맙소사</p> -->
+					</div>
+				</div>
+			</div>
+			<!-- #1 End -->
+			<!-- #2 -->
+		<div class="col-sm-6 col-lg-4 mb-5">
+				<div class="card">
+				<div class="card-img">
+					<div class="mask"></div>
+					<img src="images/nano2.jpg" alt="" class="img-fluid w-100">
+				</div>
+				<div class="card-body">
+					<h4 class="card-title">Lorem ipsum dolor.</h4>
+				</div>
+			</div>
+		</div>
+		<!-- #2 End -->
+		<!-- #3 -->
+	<div class="col-sm-6 col-lg-4 mb-5">
+			<div class="card">
+			<div class="card-img">
+				<div class="mask"></div>
+				<img src="images/nano3.jpg" alt="" class="img-fluid w-100">
+			</div>
+			<div class="card-body">
+				<h4 class="card-title">Lorem ipsum dolor.</h4>
+			</div>
+		</div>
+	</div>
+	<!-- #3 End -->
+	<!-- #4-->
+<div class="col-sm-6 col-lg-4 mb-5">
+		<div class="card">
+		<div class="card-img">
+			<div class="mask"></div>
+			<img src="images/nano4.jpg" alt="" class="img-fluid w-100">
+		</div>
+		<div class="card-body">
+			<h4 class="card-title">Lorem ipsum dolor.</h4>
+		</div>
+	</div>
+</div>
+<!-- #4 End -->
+<!-- #5 -->
+<div class="col-sm-6 col-lg-4 mb-5">
+	<div class="card">
+	<div class="card-img">
+		<div class="mask"></div>
+		<img src="images/nano5.jpg" alt="" class="img-fluid w-100">
+	</div>
+	<div class="card-body">
+		<h4 class="card-title">Lorem ipsum dolor.</h4>
+	</div>
+</div>
+</div>
+<!-- #5 End -->
+<!-- #6 -->
+<div class="col-sm-6 col-lg-4 mb-5">
+	<div class="card">
+	<div class="card-img">
+		<div class="mask"></div>
+		<img src="images/nano6.jpg" alt="" class="img-fluid w-100">
+	</div>
+	<div class="card-body">
+		<h4 class="card-title">Lorem ipsum dolor.</h4>
+	</div>
+</div>
+</div>
+<!-- #6 End -->
+
+		</div>
+	</div>
+</div>
+
+<div class="advan">
+	<div class="container">
+		<h2 class="advan-title text-center mb-4">The Udacity Advantage</h2>
+		<div class="row">
+			<div class="col-md-6 text-center text-md-left d-flex flex-column justify-content-center order-2 order-md-1">
+				<div class="icon d-flex justify-content-center align-items-center ml-auto mr-auto mb-3 ml-md-0 ">
+					<img src="images/adv-icon1.svg" alt="icon">
+				</div>
+				<h4 class="title-1st">Lorem ipsum dolor sit amet.</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam asperiores adipisci nihil ratione, delectus doloremque facilis nobis, numquam dolor magnam quod animi iusto architecto alias excepturi enim, facere maxime eligendi.</p>
+			</div>
+			<div class="col-md-6 img-view order-1 order-md-2 mb-5 mb-md-0">
+				<img src="images/adv-img1.jpg" alt="" class="img-fluid img-1st">
+				<img src="images/adv-img2.jpg" alt="" class="img-fluid img-2st">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 text-center text-md-left d-flex flex-column justify-content-center order-2 order-md-2">
+				<div class="icon d-flex justify-content-center align-items-center ml-auto mr-auto mb-3 ml-md-0 ">
+					<img src="images/adv-icon2.svg" alt="icon">
+				</div>
+				<h4 class="title-2st">Lorem ipsum dolor sit amet.</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam asperiores adipisci nihil ratione, delectus doloremque facilis nobis, numquam dolor magnam quod animi iusto architecto alias excepturi enim, facere maxime eligendi.</p>
+			</div>
+			<div class="col-md-6 img-view order-1 order-md-1 mb-5 mb-md-0">
+				<img src="images/adv-img3.jpg" alt="" class="img-fluid img-1st">
+				<img src="images/adv-img4.jpg" alt="" class="img-fluid img-2st">
+			</div>
+		</div>
+		<div class="row mb-5">
+			<div class="col-md-6 text-center text-md-left d-flex flex-column justify-content-center order-2 order-md-1">
+				<div class="icon d-flex justify-content-center align-items-center ml-auto mr-auto mb-3 ml-md-0 ">
+					<img src="images/adv-icon3.svg" alt="icon">
+				</div>
+				<h4 class="title-3st">Lorem ipsum dolor sit amet.</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam asperiores adipisci nihil ratione, delectus doloremque facilis nobis, numquam dolor magnam quod animi iusto architecto alias excepturi enim, facere maxime eligendi.</p>
+			</div>
+			<div class="col-md-6 img-view order-1 order-md-2 mb-5 mb-md-0">
+				<img src="images/adv-img5.jpg" alt="" class="img-fluid img-1st">
+				<img src="images/adv-img6.jpg" alt="" class="img-fluid img-2st">
+			</div>
+		</div>
+
+	</div>
+</div>
+
+
+
+<!--contact -->
+<div class="contact py-5 mb-5">
+	<div class="container py-5">
+		<div class="row text-center text-white">
+			<div class="col-md-6 offset-md-3">
+				<h2>CONTACT US</h2>
+				<p>Lorem ipsum dolor sit amet, Itaque sapiente, quasi aliquam est corrupti porro repellat non dignissimos eos numquam earum voluptate, amet voluptatibus nemo deleniti consequuntur dolores tempore molestiae.</p>
+				<div class="btn btn-primary">
+					CONTACT US NOW
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div style="height: 1000px;"></div>
+
+	<!-- Swiper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+   var swiper = new Swiper('.swiper-container', {
+      nextButton: '.swiper-button-next',
+      prevButton: '.swiper-button-prev',
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true
+   });
+</script>
+</body>
+
+</html>
