@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <!--   Created using jsbin.com   Source can be edited via http://jsbin.com/ocupor/1/edit
+    -->
+    <head>
+        <meta charset=utf-8 />
+        <title>JS Bin</title>
+        <style>
+            #right {
+                position: absolute;
+                top: 2000px;
+            }
+            #video2{
+              display: block;
+              width:100%;
+
+            }
+
+
+        </style>
+
+        <style id="jsbin-css">
+        </style>
+    </head>
+    <body style=" height: 4000px;" onload="vPlay()">
+         <div id="vWrap">
+           <video id="video2" autoplay muted loop>
+              <source src="images/video01.mp4"/>
+           </video>
+         </div>
+        <div id="info"></div>
+        <div id="down">
+            scroll down please...
+        </div>
+        <div id="right">
+            scroll right please...
+        </div>
+
+
+
+        <script>
+
+            var vid = document.getElementById('video2');
+            var vWrap = document.getElementById('vWrap');
+
+            var vidHeight = 0;
+
+            function vPlay(){
+                vidHeight = vid.offsetHeight - 100;
+                console.log("h = "+vidHeight);
+
+
+                window.onscroll = function(){
+                    var view = window.pageYOffset;
+                    console.log(view)
+
+                    if(view > vidHeight ){
+                        vid.pause();
+                    }else{
+                        vid.play();
+                    }
+
+                };
+
+            }
+
+            window.addEventListener("resize",function(){
+              vPlay()
+            })
+
+
+
+        </script>
+
+    </body>
+
+</html>

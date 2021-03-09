@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+body{overflow-x: hidden;}
+  :root{
+    --primary-color1:#4458cc;
+    --primary-color2:#854fee;
+    --bg-color1:#ccc;
+    --bg-color2:#f0f0f0;
+    --text-color:#777;
+    --border-color:#20f1f1;
+    --gradient-color:linear-gradient(90deg,#4458dc 0%,#854fee 100%);
+    --shadow-color:0px 10px 30px rgba(118,85,225,0.3);
+    --box-shadow:0px 10px 20px rgba(57,56,61,0.3)
+  }
+  /* body,html {height: 100%;} */
+  .headerWrap{
+
+    background-size:cover; width:100vw;height:100vh;
+    overflow: hidden;
+  }
+  .headerWrap .nav-item{border-bottom: 4px solid transparent;transition:0.3s}
+  .headerWrap .nav-item:hover{border-bottom: 4px solid var(--primary-color1);}
+  .headerWrap.fixed-top{box-shadow:0 0 20px grey;transition:0.3s;}
+
+  nav.navbar {background:rgba(0,0,0,0); transition:0.3s;}
+  nav.navbar:hover {background:rgba(0,0,0,0.5);}
+  .headerWrap #vWrap {width:100vw; height:100vh;display:flex; justify-content:center;position: absolute;top:0;overflow: hidden;}
+  .headerWrap #vWrap #video1{height: 120vh;}
+  .headerWrap #vWrap .darkOverlay {width: 100vw;height: 120vh;position: absolute;top: 0;left: 0;background: rgba(0,0,0,0.7);}
+  .headerWrap div .logo {transform:scale(0.7); padding-top:12vw;}
+  /* visualWrap */
+  /* .visualWrap{
+    background:#000;
+    width: 100vw; height:100vh;position: relative;
+  }
+  .visualWrap video {
+    width: 100vw; height:100vh;position: absolute; top: 0;left: 50%; transform:translateX(-50%);
+
+  }
+  .video .darkOverlay {width: 100vw; height: 100vh; position: absolute;top: 0;left: 0;background: rgba(0,0,0,0.7);} */
+
+  /* content */
+  .content {
+    background: url(../images/bg_3.jpg)no-repeat center;
+    /* background: #000; */
+    background-size:cover; width:100vw; height:100vh; position: relative;
+    overflow:hidden;
+  }
+  .content .container .overlay{
+    background: rgba(1,87,123,0.3); max-width:50vw; min-height:30vh;;border-radius:5px;
+    position: absolute; top:50%; transform:translateY(-50%);
+  }
+
+  .content .partWrap {
+    width: 100%;height: 100%;position: absolute;left: 0;top: 0;
+  }
+/* 애니메이션 조각 */
+
+
+  .content .partWrap .part1 {
+    background: url(../images/obj_l1.png)no-repeat center;
+    background-size:cover;
+    width:120px; height:120px; position: absolute; left:10%; top:5%;
+    animation-name:bal01;
+			animation-duration:1.5s;
+			animation-iteration-count: infinite;
+			animation-direction:alternate;
+  }
+  @keyframes bal01{
+			0%{top:10%;}
+			100%{top:15%;}
+		}
+  .content .partWrap .part2 {
+    background: url(../images/obj_l2.png)no-repeat center;
+    background-size:cover;
+    width:150px; height:150px; position: absolute; right:10%; top:35%;
+    animation-name:bal02;
+			animation-duration:1.5s;
+			animation-iteration-count: infinite;
+			animation-direction:alternate;
+  }
+  @keyframes bal02{
+			0%{top:35%;}
+			100%{top:29%;}
+		}
+  .content .partWrap .part3 {
+    background: url(../images/obj_l3.png)no-repeat center;
+    background-size:cover;
+    width:80px; height:80px; position: absolute; left:16%; top:28%;
+    animation-name:bal03;
+      animation-duration:1.3s;
+      animation-iteration-count: infinite;
+      animation-direction:alternate;
+  }
+  @keyframes bal03{
+			0%{top:28%;}
+			100%{top:25%;}
+		}
+  .content .partWrap .part4 {
+    background: url(../images/obj_l4.png)no-repeat center;
+    background-size:cover;
+    width:160px; height:160px; position: absolute; left:17%; top:60%;
+    animation-name:bal04;
+    animation-duration:1.3s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+    }
+    @keyframes bal04{
+        0%{top:60%;}
+        100%{top:66%;}
+      }
+  .content .partWrap .part5 {
+    background: url(../images/obj_r4.png)no-repeat center;
+    background-size:cover;
+    width:200px; height:200px; position: absolute; right:17%; top:60%;
+    animation-name:bal04;
+    animation-duration:1.7s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+    }
+    @keyframes bal05{
+    0%{top:76%;}
+    100%{top:70%;}
+      }
+
+
+  /* content slide */
+  .gameinfo{
+    width: 100vw;background:#000; height:100vh;
+  }
+  .gameinfo h2.title:after {
+    content:"";display: block;width: 200px;height: 2px;background:var(--primary-color1);
+    margin: 10px auto;
+  }
+  .gameinfo .sliderView img{
+    display: block; width: 90%; margin:0 auto;
+    border-radius:5px; overflow:hidden;
+  }
+  /* .gameinfo2 {float:left;} */
+  

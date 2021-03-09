@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="css/magnific-popup.css">
   <link rel="stylesheet" href="css/owl/owl.carousel.min.css"><!-- 추가 : 슬라이더 효과-->
   <link rel="stylesheet" href="css/owl/owl.theme.default.min.css"><!-- 위와 동일-->
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/style.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -18,65 +20,29 @@
   <script src="js/isotope.pkgd.min.js"></script>
   <script src="js/jquery.magnific-popup.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
-
-  <style>
-    :root{
-      --primary-color1:#4458cc;
-      --primary-color2:#854fee;
-      --bg-color1:#ccc;
-      --bg-color2:#f0f0f0;
-      --text-color:#777;
-      --border-color:#20f1f1;
-      --gradient-color:linear-gradient(90deg,#4458dc 0%,#854fee 100%);
-      --shadow-color:0px 10px 30px rgba(118,85,225,0.3);
-      --box-shadow:0px 10px 20px rgba(57,56,61,0.3)
-    }
-    /* body,html {height: 100%;} */
-    .headerWrap{
-      background:url(images/bg_1_2.jpg) no-repeat center;
-      background-size:cover; width:100vw;height:100vh; position: relative;
-    }
-    .headerWrap .nav-item{border-bottom: 4px solid transparent;transition:0.3s}
-    .headerWrap .nav-item:hover{border-bottom: 4px solid var(--primary-color1);}
-    .headerWrap.fixed-top{box-shadow:0 0 20px grey;transition:0.3s;}
-
-    nav.navbar {background:rgba(0,0,0,0); transition:0.3s;}
-    nav.navbar:hover {background:rgba(0,0,0,0.5);}
-    /* .button.primary-button{
-      box-shadow: var(--box-shadow);background:var(--gradient-color);color:white;
-      width: 433px;height: 64px; line-height: 50px;
-      position: absolute; top:70%; left:6%;
-      border:none;
-      font-size:1.5em;
-    } */
-
-    /* visualWrap */
-    .visualWrap{
-      background:#000;
-      width: 100vw; height:100vh;position: relative;
-    }
-    .visualWrap video {
-      width: 100vw; height:100vh;position: absolute; top: 0;left: 50%; transform:translateX(-50%);
-    }
-
-    /* content */
-    .content {
-      background: url(images/bg_3.jpg)no-repeat center;
-      /* background: #000; */
-      background-size:cover; width:100vw;height:100vh; position: relative;
-    }
-    .content .bluebox{width:70%; height:70%;}
-    /* .content .bluebox .blue{background: #40c3ff; width:1570px; height:960px;} */
+  <script src="js/wow.js"></script>
 
 
-  </style>
 
 </head>
-<body>
+<body onload="vPlay()">
 <!-- header START -->
 <div class="headerWrap">
 <header id="headerWrap">
-  <div class="container pl-0 pr-0">
+
+  <!-- <div class="video" id="videoWrap">
+    <video src="images/video1.mp4" id="video" autoplay loop muted ></video>
+    <div class="darkOverlay"></div>
+  </div> -->
+
+  <div id="vWrap">
+    <video id="video1" autoplay muted loop>
+      <source src="images/video1.mp4"/>
+    </video>
+    <div class="darkOverlay"></div>
+  </div>
+
+  <div class="container pl-0 pr-0" style="position: relative;">
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <a href="#" class="navbar-brand">
         <img src="images/logo1.png" alt="" class="img-fluid">
@@ -101,65 +67,153 @@
         </ul>
       </div>
     </nav>
+    <div class="d-flex justify-content-center logo">
+    <a href="#!"><img src="images/logo_b.png" alt="" class="wow fadeInDown" data-wow-delay="0.3s"></a>
+    </div>
   </div>
+
 </header>
 <!-- <a href="#!" class="btn button primary-button">구매하기</a> -->
 </div>
 <!-- header end -->
 
-<!-- visual START -->
-<div class="visualWrap">
-  <div class="container">
-    <div class="video">
-      <a href="https://www.youtube.com/embed/Vu4-XZTwyUQ">
-      <video src="images/video1.mp4" autoplay loop muted></video>
-      </a>
-    </div>
-  </div>
-</div>
-<!-- visual end -->
+
 
 <!-- content START -->
 <div class="content">
   <div class="container">
-    <div class="bluebox">
-      <div class="blue"></div>
-      <div class="txt">
+    <div class="row justify-content-center">
+      <div class="col-12 text-white text-center overlay md-h-70 wow fadeIn" data-wow-delay=“1.5s” >
+        <img src="images/bg_txt.png" alt="" class="img-fluid">
+      </div>
+    </div>
+    <div class="partWrap">
+      <div class="part1">
+        <!-- <img src="images/obj_l1.png" alt="" class="obj1 " > -->
+      </div>
+      <div class="part2"></div>
+      <div class="part3"></div>
+      <div class="part4"></div>
+      <div class="part5"></div>
+    </div>
+    </div>
+  </div>
 
+<!-- content slide gameinfo -->
+  <div class="gameinfo pt-5">
+    <div class="container text-white">
+      <h2 class="title text-center">게임정보</h2>
+      <p class="text-center">안팎과 커뮤니케이션하며 마지막까지 생존하고 숨겨진 진실을 밝혀내라!</p>
+      <div class="col-12">
+        <div class="owl-carousel owl-theme owl-loaded mt-4 py-4">
+          <!-- #1 -->
+          <div>
+            <div class="sliderView">
+              <img src="images/slider1.jpg" alt="slider1" >
+            </div>
+          </div>
+          <!-- #2 -->
+        <div>
+          <div class="sliderView">
+            <img src="images/slider2.jpg" alt="slider2" >
+          </div>
+        </div>
+          <!-- #3 -->
+        <div>
+          <div class="sliderView">
+            <img src="images/slider3.jpg" alt="slider3" >
+          </div>
+        </div>
+          <!-- #4 -->
+        <div>
+          <div class="sliderView">
+            <img src="images/slider4.jpg" alt="slider4" >
+          </div>
+        </div>
+          <!-- #5 -->
+        <div>
+          <div class="sliderView">
+            <img src="images/slider5.jpg" alt="slider5" >
+          </div>
+        </div>
+          <!-- #6 -->
+        <div>
+          <div class="sliderView">
+            <img src="images/slider6.jpg" alt="slider1" style="">
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="col-12 gameinfo2 clearfix">
+        <img src="images/imgtxt2.png" alt="" class="img-fluid">
       </div>
     </div>
   </div>
-</div>
-
+<!-- content slide end -->
 
 <script>
   //main
-  var navOffset = $("header#headerWrap").height()+50;
+  var navOffset = $("header#headerWrap .container").height()+50;
 
   function navBar(){
     $(window).scroll(function(){
       var scroll = $(window).scrollTop();
       if(scroll>navOffset){
-        $("header#headerWrap").addClass("fixed-top"); //fixed-top은 기본 제공되는 기능
+        $("header#headerWrap .container").addClass("fixed-top"); //fixed-top은 기본 제공되는 기능
       }else{
-        $("header#headerWrap").removeClass("fixed-top");
+        $("header#headerWrap .container").removeClass("fixed-top");
       }
     });
   }
 navBar();
+new WOW().init();
+
+// 슬라이드
+$(".gameinfo .owl-carousel").owlCarousel({
+ loop:false,
+ margin:30,
+ autoplay:false,
+ dots:true, //pager
+ nav:false,
+ responsive:{
+   0:{items:1},
+   600:{items:1},
+   1000:{items:2}
+ }//key값?
+});
+
+// 동영상 재생
+</script>
+<script>
+            var vid = document.getElementById('video1');
+            var vWrap = document.getElementById('vWrap');
+
+            var vidHeight = 0;
+
+            function vPlay(){
+                vidHeight = vid.offsetHeight - 100;
+                console.log("h = "+vidHeight);
+
+
+                window.onscroll = function(){
+                    var view = window.pageYOffset;
+                    console.log(view)
+
+                    if(view > vidHeight ){
+                        vid.pause();
+                    }else{
+                        vid.play();
+                    }
+
+                };
+
+            }
+
+            window.addEventListener("resize",function(){
+              vPlay()
+            })
 
 </script>
 
-
-
-
-
-
-
-
-
-
-
-</script>
 </body>
 </html>
