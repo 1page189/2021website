@@ -21,13 +21,15 @@
 				slideI.goToNextSlide()
 			});
 
-			
+
 			$(".prevBtn2").click(function(){
 				slideI2.goToPrevSlide()
 			});
 			$(".nextBtn2").click(function(){
 				slideI2.goToNextSlide()
 			});
+
+
 			
 
 		});
@@ -87,36 +89,164 @@
 						<input type="radio"/ name="tab" id="first" class="inp">
 						<input type="radio"/ name="tab" id="second" class="inp">
 						<input type="radio"/ name="tab" id="third" class="inp">
-						
+
 						<div class="sliderTab">
 							<label for="first"> 방탈출예약</label>
 							<label for="second">예약확인</label>
 							<label for="third">테마검색</label>
-							
+
 						</div>
-						<div class="tab_slider1">
+						<div class="tab_slider1 on" id="first">
 							<fieldset>
 								<legend>booking</legend>
-								<label for="zone">원하는 지역을 선택하세요.</label>
+								<div>
+								<label for="zone" id="zone">원하는 지역을 선택하세요.</label>
+								<div>
 								<select name="zone" id="zone">
+									<option value="선택하세요">선택하세요</option>
 									<option value="서을">서울</option>
 									<option value="인천">인천</option>
 									<option value="부산">부산</option>
 									<option value="대전">대전</option>
 								</select>
+								</div>
+								</div>
+								<div id="data_time">
 								<label for="date">예약일</label>
 								<label for="time">예약시간</label>
+								</div>
+								<div>
 								<input type="date" id="date" name="date">
 								<input type="time" id=time name="time">
-								<label for="them">테마</label>
-								<label for="adult">성인</label>
-								<label for="kid">아이</label>
-								<select name="them" id="them">
+								</div>
+								<div id="tak1">
+									<label for="them">테마</label>
+									<label for="adult">성인</label>
+									<label for="kid">아이</label>
+								</div>
+								<div id="tak2">
+								<select name="theme" id="theme">
+									<option value="choice">선택하세요</option>
 									<option value="horror">호러</option>
 									<option value="fantasy">판타지</option>
 									<option value="thriller">스릴러</option>
 								</select>
 								<select name="adult" id="adult">
+									<option value="1">0</option>
+									<option value="1">1</option>
+									<option value="1">2</option>
+									<option value="1">3</option>
+									<option value="1">4</option>
+									<option value="1">5</option>
+								</select>
+								<select name="child" id="child">
+									<option value="1">0</option>
+									<option value="1">1</option>
+									<option value="1">2</option>
+									<option value="1">3</option>
+									<option value="1">4</option>
+								</select>
+								</div>
+								<button type="button" style="display:block;" id="button">예약하기</button>
+							</fieldset>
+						</div>
+
+
+
+
+
+						<div class="tab_slider2" id="second">
+							<fieldset>
+								<legend>booking</legend>
+								<div>
+								<label for="zone" id="zone">원하는 지역을 선택하세요.</label>
+								<div>
+								<select name="zone" id="zone">
+									<option value="선택하세요">선택하세요</option>
+									<option value="서을">서울</option>
+									<option value="인천">인천</option>
+									<option value="부산">부산</option>
+									<option value="대전">대전</option>
+								</select>
+								</div>
+								</div>
+								<div id="data_time">
+								<label for="date">예약일</label>
+								<label for="time">예약시간</label>
+								</div>
+								<div>
+								<input type="date" id="date" name="date">
+								<input type="time" id=time name="time">
+								</div>
+								<div id="tak1">
+									<label for="them">테마</label>
+									<label for="adult">성인</label>
+									<label for="kid">아이</label>
+								</div>
+								<div id="tak2">
+								<select name="theme" id="theme">
+									<option value="choice">선택하세요</option>
+									<option value="horror">호러</option>
+									<option value="fantasy">판타지</option>
+									<option value="thriller">스릴러</option>
+								</select>
+								<select name="adult" id="adult">
+									<option value="1">0</option>
+									<option value="1">1</option>
+									<option value="1">2</option>
+									<option value="1">3</option>
+									<option value="1">4</option>
+									<option value="1">5</option>
+								</select>
+								<select name="child" id="child">
+									<option value="1">0</option>
+									<option value="1">1</option>
+									<option value="1">2</option>
+									<option value="1">3</option>
+									<option value="1">4</option>
+									<option value="1">5</option>
+								</select>
+								</div>
+								<button type="button" style="display:block;" id="button">예약하기</button>
+							</fieldset>
+						</div>
+						<div class="tab_slider3" id="third">
+							<fieldset>
+								<legend>booking</legend>
+								<div>
+								<label for="zone" id="zone">원하는 지역을 선택하세요.</label>
+								<div>
+								<select name="zone" id="zone">
+									<option value="선택하세요">선택하세요</option>
+									<option value="서을">서울</option>
+									<option value="인천">인천</option>
+									<option value="부산">부산</option>
+									<option value="대전">대전</option>
+								</select>
+								</div>
+								</div>
+								<div id="data_time">
+								<label for="date">예약일</label>
+								<label for="time">예약시간</label>
+								</div>
+								<div>
+								<input type="date" id="date" name="date">
+								<input type="time" id=time name="time">
+								</div>
+								<div id="tak1">
+									<label for="them">테마</label>
+									<label for="adult">성인</label>
+									<label for="kid">아이</label>
+								</div>
+								<div id="tak2">
+								<select name="theme" id="theme">
+									<option value="choice">선택하세요</option>
+									<option value="horror">호러</option>
+									<option value="fantasy">판타지</option>
+									<option value="thriller">스릴러</option>
+								</select>
+								<select name="adult" id="adult">
+									<option value="1">0</option>
 									<option value="1">1</option>
 									<option value="1">2</option>
 									<option value="1">3</option>
@@ -125,6 +255,7 @@
 									<option value="1">6</option>
 								</select>
 								<select name="child" id="child">
+									<option value="1">0</option>
 									<option value="1">1</option>
 									<option value="1">2</option>
 									<option value="1">3</option>
@@ -132,21 +263,9 @@
 									<option value="1">5</option>
 									<option value="1">6</option>
 								</select>
-
-
-
+								</div>
+								<button type="button" style="display:block;" id="button">예약하기</button>
 							</fieldset>
-						</div>
-
-
-
-
-
-						<div class="tab_slider2">
-							2
-						</div>
-						<div class="tab_slider3">
-							3
 						</div>
 
 
@@ -206,42 +325,42 @@
 						</ul>
 						<div class="prevBtn">
 							<img src="images/prev.png" alt="">
-						</div>						
+						</div>
 						<div class="nextBtn">
 							<img src="images/next.png" alt="">
-						</div>						
+						</div>
 					</li>
 					<li class="cB4">
 						<ul class="slider2">
-							
+
 							<li>
 								<img src="images/con6.jpg" alt="">
 								<div class="sliderT">
 									<p>판  타  지</p>
-									
+
 								</div>
 							</li>
 							<li>
 								<img src="images/con7.png" alt="">
 								<div class="sliderT">
 									<p>스  릴  러</p>
-									
+
 								</div>
 							</li>
 							<li>
 								<img src="images/con8.jpg" alt="" style="transform: translate(0,-70px)">
 								<div class="sliderT">
 									<p>호&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;러</p>
-									
+
 								</div>
 							</li>
 						</ul>
 						<div class="prevBtn2">
 							<img src="images/prev.png" alt="">
-						</div>						
+						</div>
 						<div class="nextBtn2">
 							<img src="images/next.png" alt="">
-						</div>						
+						</div>
 					</li>
 					<li class="cB5">
 						<!-- <img src="images/con9.jpg" alt="">
@@ -302,7 +421,7 @@
 					</li>
 				</ul>
 			</section>
-			
+
 		</div>
 	</div>
 	<footer id="footer">
@@ -320,5 +439,13 @@
 		</address>
 		</div>
 	</footer>
+	<!-- <script>
+		$("#button").click(function(){
+			var num = $(this).index();
+			$("#button").removeClass("active");
+			$("#button").addClass("active");
+
+		});
+	</script> -->
 </body>
 </html>
